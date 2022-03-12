@@ -1,9 +1,9 @@
 package co.com.sofka.domain.paquete;
 
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domain.paquete.value.BecaID;
 import co.com.sofka.domain.paquete.value.Especializacion;
 import co.com.sofka.domain.paquete.value.MentoriaID;
+import co.com.sofka.generic.value.Duracion;
 
 public class Mentoria extends Entity<MentoriaID> {
     private final Duracion duracion;

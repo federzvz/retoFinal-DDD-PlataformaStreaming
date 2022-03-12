@@ -12,7 +12,6 @@ public class Evaluacion implements ValueObject<Evaluacion.Props> {
     public Evaluacion(Integer notaJurados, Integer notaPublico) {
         this.notaJurados = Objects.requireNonNull(notaJurados);
         this.notaPublico = Objects.requireNonNull(notaPublico);
-        boolean isAprobadoAux;
 
         if(notaJurados<1){
             throw new IllegalArgumentException("La nota del jurado no puede ser menor que 1.");
@@ -28,10 +27,10 @@ public class Evaluacion implements ValueObject<Evaluacion.Props> {
         }
 
         if(((notaJurados+notaPublico)/2) < 6){
-            isAprobadoAux=false;
+            this.isAprobado=false;
+        }else{
+            this.isAprobado=true;
         }
-        isAprobadoAux=true;
-        this.isAprobado=isAprobadoAux;
     }
 
     @Override
