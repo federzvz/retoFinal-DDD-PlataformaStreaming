@@ -6,8 +6,8 @@ import co.com.sofka.domain.paquete.value.MentoriaID;
 import co.com.sofka.generic.value.Duracion;
 
 public class Mentoria extends Entity<MentoriaID> {
-    private final Duracion duracion;
-    private final Especializacion especializacion;
+    private Duracion duracion;
+    private Especializacion especializacion;
 
     public Mentoria(MentoriaID entityId, Duracion duracion, Especializacion especializacion){
         super(entityId);

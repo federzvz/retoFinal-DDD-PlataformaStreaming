@@ -14,11 +14,5 @@ public class PaqueteEventChange extends EventChange {
             paquete.castingList=new ArrayList<>();
             paquete.mentoriaList=new ArrayList<>();
         });
-
-
-
-
-
-
     }
 }

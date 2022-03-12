@@ -5,7 +5,7 @@ import co.com.sofka.domain.paquete.value.CastingID;
 import co.com.sofka.domain.paquete.value.Evaluacion;
 
 public class Casting extends Entity<CastingID> {
-    private final Evaluacion evaluacion;
+    private Evaluacion evaluacion;
 
     public Casting(CastingID entityId, Evaluacion evaluacion) {
         super(entityId);

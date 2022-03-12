@@ -5,7 +5,7 @@ import co.com.sofka.domain.paquete.value.BecaID;
 import co.com.sofka.domain.paquete.value.Bono;
 
 public class Beca extends Entity<BecaID> {
-    private final Bono bono;
+    private Bono bono;
 
     public Beca(BecaID entityId, Bono bono) {
         super(entityId);
