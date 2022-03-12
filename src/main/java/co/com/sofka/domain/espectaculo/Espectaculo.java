@@ -2,6 +2,7 @@ package co.com.sofka.domain.espectaculo;
 
 import co.com.sofka.domain.espectaculo.event.EspectaculoCreado;
 import co.com.sofka.domain.espectaculo.value.*;
+import co.com.sofka.domain.funcion.Funcion;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.generic.value.Costo;
@@ -20,7 +21,7 @@ public class Espectaculo extends AggregateEvent<EspectaculoID> {
     protected OrganizadorID organizadorID;
     protected PremioID premioID;
     protected PlataformaID plataformaID;
-    //protected FuncionID funcionID;
+    protected List<Funcion> funcionList;
 
     public Espectaculo(EspectaculoID entityId, OrganizadorID organizadorID, PremioID premioID, PlataformaID plataformaID) {
         super(entityId);

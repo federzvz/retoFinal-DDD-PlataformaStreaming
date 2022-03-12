@@ -12,9 +12,8 @@ public class CrearPaqueteUseCase extends UseCase<RequestCommand<CrearPaquete>, R
     public void executeUseCase(RequestCommand<CrearPaquete> input) {
         CrearPaquete crearPaquete = input.getCommand();
 
-        Paquete paquete = new Paquete(crearPaquete.getPaqueteID(), crearPaquete.getBecaID());
+        Paquete paquete = new Paquete(crearPaquete.getPaqueteID(), crearPaquete.getBecaID(), crearPaquete.getNombre(), crearPaquete.getCosto());
         emit().onResponse(new ResponseEvents(paquete.getUncommittedChanges()));
-
 
     }
 }

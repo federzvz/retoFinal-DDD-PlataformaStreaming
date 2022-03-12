@@ -6,6 +6,8 @@ import co.com.sofka.domain.paquete.command.CrearPaquete;
 import co.com.sofka.domain.paquete.event.PaqueteCreado;
 import co.com.sofka.domain.paquete.value.BecaID;
 import co.com.sofka.domain.paquete.value.PaqueteID;
+import co.com.sofka.generic.value.Costo;
+import co.com.sofka.generic.value.Nombre;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +18,9 @@ class CrearPaqueteUseCaseTest {
         //arrange
         PaqueteID paqueteID = PaqueteID.of(1);
         BecaID becaID = BecaID.of(1);
-        var command = new CrearPaquete(paqueteID, becaID);
+        Nombre nombre = new Nombre("NombreDePrueba");
+        Costo costo = new Costo(500.0,"USD");
+        var command = new CrearPaquete(paqueteID, becaID,nombre,costo);
         var usecase = new CrearPaqueteUseCase();
         //act
         var events = UseCaseHandler.getInstance()
@@ -27,6 +31,7 @@ class CrearPaqueteUseCaseTest {
         var event = (PaqueteCreado)events.get(0);
         Assertions.assertEquals("paquete.paquetecreado", event.type);
         Assertions.assertEquals("1", event.getBecaID().value());
+        Assertions.assertEquals("NombreDePrueba", event.getNombre().Nombre());
         Assertions.assertEquals("1", event.aggregateRootId());
     }
 

@@ -8,6 +8,11 @@ public class Costo implements ValueObject<Costo.Props> {
     private final Double valor;
     private final String moneda;
 
+    public Costo(){
+        this.valor=0.0;
+        this.moneda="USD";
+    }
+
     public Costo(Double valor, String moneda) {
         this.valor = Objects.requireNonNull(valor);
         this.moneda = Objects.requireNonNull(moneda);
