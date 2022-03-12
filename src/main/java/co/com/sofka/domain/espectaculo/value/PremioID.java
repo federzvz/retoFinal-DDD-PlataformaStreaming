@@ -3,7 +3,7 @@ package co.com.sofka.domain.espectaculo.value;
 import co.com.sofka.domain.generic.Identity;
 
 public class PremioID extends Identity {
-    private PremioID(Integer num){
+    public PremioID(Integer num){
         super(num.toString());
     }
 

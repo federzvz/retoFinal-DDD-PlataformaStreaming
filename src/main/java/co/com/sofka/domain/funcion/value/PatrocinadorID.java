@@ -3,7 +3,7 @@ package co.com.sofka.domain.funcion.value;
 import co.com.sofka.domain.generic.Identity;
 
 public class PatrocinadorID extends Identity {
-    private PatrocinadorID(Integer num){
+    public PatrocinadorID(Integer num){
         super(num.toString());
     }
 

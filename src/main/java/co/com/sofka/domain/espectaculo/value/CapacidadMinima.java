@@ -13,6 +13,9 @@ public class CapacidadMinima implements ValueObject<Integer> {
 
     public CapacidadMinima(Integer capacidad) {
         this.capacidad = Objects.requireNonNull(capacidad);
+        if(capacidad<0){
+            throw new IllegalArgumentException("La capacidad minima no puede ser un valor negativo.");
+        }
         if (capacidad==0) {
             throw new IllegalArgumentException("La capacidad minima no puede ser cero.");
         }

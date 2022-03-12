@@ -3,17 +3,14 @@ package co.com.sofka.domain.paquete;
 import co.com.sofka.domain.espectaculo.Espectaculo;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.domain.paquete.event.BecaGenerada;
-import co.com.sofka.domain.paquete.event.CastingEvaluado;
-import co.com.sofka.domain.paquete.event.MentoriaGenerada;
-import co.com.sofka.domain.paquete.event.PaqueteCreado;
+import co.com.sofka.domain.paquete.event.*;
 import co.com.sofka.domain.paquete.value.*;
 import co.com.sofka.generic.value.Costo;
 import co.com.sofka.generic.value.Duracion;
 import co.com.sofka.generic.value.Nombre;
 
 import java.util.List;
-import java.util.Map;
+import java.util.Objects;
 
 public class Paquete extends AggregateEvent<PaqueteID> {
     protected Nombre nombre;
@@ -51,6 +48,12 @@ public class Paquete extends AggregateEvent<PaqueteID> {
 
     public void evaluarCasting(Evaluacion evaluacion){
         appendChange(new CastingEvaluado(evaluacion)).apply();
+    }
+
+    public void modificarCosto(PaqueteID paqueteID, Costo costo){
+        Objects.requireNonNull(paqueteID);
+        Objects.requireNonNull(costo);
+        appendChange(new CostoPaqueteModificado(paqueteID,costo)).apply();
     }
 
     public List<Mentoria> MentoriaList() {
