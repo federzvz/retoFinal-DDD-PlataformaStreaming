@@ -5,8 +5,6 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.domain.espectaculo.Espectaculo;
 import co.com.sofka.domain.espectaculo.command.CrearEspectaculo;
-import co.com.sofka.domain.paquete.Paquete;
-import co.com.sofka.domain.paquete.command.CrearPaquete;
 
 public class CrearEspectaculoUseCase extends UseCase<RequestCommand<CrearEspectaculo>, ResponseEvents> {
 

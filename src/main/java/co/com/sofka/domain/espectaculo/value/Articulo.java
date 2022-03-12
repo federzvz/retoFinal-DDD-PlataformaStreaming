@@ -1,7 +1,6 @@
 package co.com.sofka.domain.espectaculo.value;
 
 import co.com.sofka.domain.generic.ValueObject;
-import co.com.sofka.domain.paquete.value.Bono;
 
 import java.util.Objects;
 

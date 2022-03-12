@@ -1,7 +1,6 @@
 package co.com.sofka.domain.espectaculo;
 
 import co.com.sofka.domain.espectaculo.value.Articulo;
-import co.com.sofka.domain.espectaculo.value.OrganizadorID;
 import co.com.sofka.domain.espectaculo.value.PremioID;
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.generic.value.Nombre;

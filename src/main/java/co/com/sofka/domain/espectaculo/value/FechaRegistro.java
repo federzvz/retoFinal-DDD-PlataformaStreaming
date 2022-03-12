@@ -3,7 +3,6 @@ package co.com.sofka.domain.espectaculo.value;
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 
 public class FechaRegistro implements ValueObject<LocalDate> {

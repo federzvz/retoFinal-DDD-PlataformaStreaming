@@ -2,7 +2,6 @@ package co.com.sofka.domain.paquete;
 
 import co.com.sofka.domain.generic.EventChange;
 import co.com.sofka.domain.paquete.event.PaqueteCreado;
-import co.com.sofka.generic.value.Costo;
 
 import java.util.ArrayList;
 

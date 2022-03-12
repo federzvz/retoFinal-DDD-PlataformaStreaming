@@ -5,7 +5,6 @@ import co.com.sofka.domain.espectaculo.value.OrganizadorID;
 import co.com.sofka.domain.espectaculo.value.PlataformaID;
 import co.com.sofka.domain.espectaculo.value.PremioID;
 import co.com.sofka.domain.generic.Command;
-import co.com.sofka.domain.paquete.value.PaqueteID;
 
 public class CrearEspectaculo extends Command {
     private final EspectaculoID espectaculoID;

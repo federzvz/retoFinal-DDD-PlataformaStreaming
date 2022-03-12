@@ -2,8 +2,6 @@ package co.com.sofka.domain.espectaculo;
 
 import co.com.sofka.domain.espectaculo.value.OrganizadorID;
 import co.com.sofka.domain.generic.Entity;
-import co.com.sofka.domain.paquete.value.BecaID;
-import co.com.sofka.domain.paquete.value.Bono;
 import co.com.sofka.generic.value.Email;
 import co.com.sofka.generic.value.Nombre;
 

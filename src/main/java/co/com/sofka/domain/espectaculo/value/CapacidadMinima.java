@@ -1,7 +1,6 @@
 package co.com.sofka.domain.espectaculo.value;
 
 import co.com.sofka.domain.generic.ValueObject;
-import org.springframework.beans.factory.annotation.Value;
 
 import java.util.Objects;
 

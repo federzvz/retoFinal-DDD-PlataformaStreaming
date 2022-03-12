@@ -9,8 +9,6 @@ import co.com.sofka.domain.paquete.value.PaqueteID;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CrearPaqueteUseCaseTest {
 
     @Test

@@ -8,10 +8,6 @@ import co.com.sofka.domain.espectaculo.value.EspectaculoID;
 import co.com.sofka.domain.espectaculo.value.OrganizadorID;
 import co.com.sofka.domain.espectaculo.value.PlataformaID;
 import co.com.sofka.domain.espectaculo.value.PremioID;
-import co.com.sofka.domain.paquete.command.CrearPaquete;
-import co.com.sofka.domain.paquete.event.PaqueteCreado;
-import co.com.sofka.domain.paquete.value.BecaID;
-import co.com.sofka.domain.paquete.value.PaqueteID;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
