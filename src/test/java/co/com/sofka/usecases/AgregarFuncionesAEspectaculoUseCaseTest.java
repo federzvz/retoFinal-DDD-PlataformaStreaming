@@ -17,7 +17,6 @@ import co.com.sofka.domain.funcion.value.ArtistaID;
 import co.com.sofka.domain.funcion.value.FuncionID;
 import co.com.sofka.domain.funcion.value.PatrocinadorID;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.generic.value.Costo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -27,7 +26,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)

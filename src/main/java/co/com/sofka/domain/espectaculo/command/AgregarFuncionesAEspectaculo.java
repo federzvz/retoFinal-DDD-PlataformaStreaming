@@ -13,9 +13,6 @@ public class AgregarFuncionesAEspectaculo extends Command {
     private Funcion funcion;
 
     public AgregarFuncionesAEspectaculo(EspectaculoID espectaculoID, Funcion funcion) {
-        if(funcion==null){
-            throw new IllegalArgumentException("Funcion es Null");
-        }
         this.espectaculoID = espectaculoID;
         this.funcion=funcion;
         this.functionList.add(funcion);

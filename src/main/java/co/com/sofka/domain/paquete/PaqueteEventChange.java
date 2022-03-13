@@ -2,6 +2,7 @@ package co.com.sofka.domain.paquete;
 
 import co.com.sofka.domain.generic.EventChange;
 import co.com.sofka.domain.paquete.event.CostoPaqueteModificado;
+import co.com.sofka.domain.paquete.event.EspectaculoAgregado;
 import co.com.sofka.domain.paquete.event.MentoriaGenerada;
 import co.com.sofka.domain.paquete.event.PaqueteCreado;
 
@@ -22,5 +23,7 @@ public class PaqueteEventChange extends EventChange {
         });
 
         apply((CostoPaqueteModificado event) -> paquete.costo = event.getCosto());
+
+        apply((EspectaculoAgregado event) -> paquete.espectaculoList = event.getEspectaculoList());
     }
 }

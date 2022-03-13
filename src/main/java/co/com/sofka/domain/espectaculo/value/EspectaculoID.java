@@ -3,7 +3,7 @@ package co.com.sofka.domain.espectaculo.value;
 import co.com.sofka.domain.generic.Identity;
 
 public class EspectaculoID extends Identity {
-    private EspectaculoID(Integer num){
+    public EspectaculoID(Integer num){
         super(num.toString());
     }
 

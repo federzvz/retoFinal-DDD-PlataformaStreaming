@@ -59,4 +59,10 @@ public class Paquete extends AggregateEvent<PaqueteID> {
     public List<Mentoria> MentoriaList() {
         return mentoriaList;
     }
+
+    public void agregarEspectaculo(PaqueteID paqueteID, Espectaculo espectaculo){
+        Objects.requireNonNull(paqueteID);
+        Objects.requireNonNull(espectaculo);
+        appendChange(new EspectaculoAgregado(paqueteID,espectaculo)).apply();
+    }
 }
